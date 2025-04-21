@@ -17,13 +17,13 @@ export function CTASection() {
             </p>
           </div>
           <div className="flex flex-col gap-2 min-[400px]:flex-row">
-            <Link href="/register">
+            <Link href="https://getwaitlist.com/waitlist/27393">
               <Button size="lg" className="bg-blue-500 hover:bg-blue-600">
                 Get Started
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
-            <Link href="/contact">
+            <Link href="https://x.com/MediLayer">
               <Button size="lg" variant="outline">
                 Contact Us
               </Button>

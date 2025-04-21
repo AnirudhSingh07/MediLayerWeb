@@ -7,6 +7,7 @@ import { HowItWorksSection } from "@/components/how-it-works-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { CTASection } from "@/components/cta-section"
 import { WavyBackground } from "@/components/ui/wavy-background";
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -16,9 +17,7 @@ export default function Home() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <Link href="/" className="flex items-center gap-2">
-              <span className="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold">
-                M
-              </span>
+              <Image src={'/logo.png'} height={60} width={60} alt="logo" />
               <span className="font-extralight text-xl">MediLayer</span>
             </Link>
           </div>
@@ -52,15 +51,13 @@ export default function Home() {
         <HeroSection />
         <FeatureSection />
         <HowItWorksSection />
-        <TestimonialsSection />
+        {/* <TestimonialsSection /> */}
         <CTASection />
       </main>
       <footer className="border-t py-6 md:py-10">
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
           <div className="flex items-center gap-2">
-            <span className="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold">
-              M
-            </span>
+          <Image src={'/logo.png'} height={60} width={60} alt="logo" />
             <span className="font-bold  text-xl">MediLayer</span>
           </div>
           <p className="text-sm text-muted-foreground">© 2024 MediLayer. All rights reserved.</p>
