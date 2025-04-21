@@ -9,7 +9,6 @@ import { WavyBackground } from "@/components/ui/wavy-background";
 export function HeroSection() {
   return (
     <section className="w-full h-[100vh] py-8 md:py-24 lg:py-32 xl:py-48">
-      
       <WavyBackground className="h-full w-full opacity-60" />
       <div className="container px-4 md:px-6">
         <div className="grid gap-6 ">
